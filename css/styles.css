@@ -4,7 +4,7 @@
   --primary-body-color: #434455;
   --primary-body-cloud: #f4f4fd;
   --primary-white-color: #fff;
-  --primary-font: "Raleway", sans-serif;
+  --primary-font: 'Raleway', sans-serif;
   --primary-accent-color: #f4f4fd;
   --secondary-accent-color: #e7e9fc;
   --active-link-color: #404bbf;
@@ -19,7 +19,7 @@ section {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-body-color);
   background-color: var(--primary-white-color);
 }
@@ -36,7 +36,7 @@ h6 {
 p {
   margin: 0;
 }
-1 img {
+img {
   display: block;
 }
 
@@ -81,7 +81,6 @@ p {
 
 .header-page {
   background-color: var(--primary-white-color);
-  padding: 24px 0;
   border-bottom: 1px solid var(--secondary-accent-color);
 }
 
@@ -89,16 +88,17 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
-.header-page .container nav {
+.header-page .logo-up {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.header-page .container .list {
-  padding-left: 76px;
+.header-page .list {
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-page .container .address-title {
@@ -120,6 +120,7 @@ p {
 
 .logo .logo-two {
   color: var(--primary-second-brand-color);
+  margin-right: 76px;
 }
 /* 2 часть в лого в футере */
 .logo .logo-three {
@@ -170,34 +171,21 @@ main {
   flex-grow: 1;
 }
 
-.container {
-  margin-top: 0;
-}
-
-.container .main-focus {
-  height: 600px;
+.main-focus {
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 120px;
-  padding-top: 140px;
+  padding: 188px 0;
 }
 
-.container .main-focus-text {
-  display: flex;
-  padding: 188px 472px 292px;
-  margin-top: 120px;
-  padding-top: 140px;
-}
-
-.container .main-focus .main-button {
-  padding: 16px 32px;
+.main-focus-text {
+  max-width: 496px;
 }
 
 .main-focus {
   background-color: var(--primary-second-brand-color);
 }
 
-.main-focus .main-focus-text {
+.main-focus-text {
   text-align: center;
   font-size: 56px;
   font-weight: 700;
@@ -206,7 +194,7 @@ main {
   color: var(--primary-white-color);
 }
 
-.main-focus .main-button {
+.main-button {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--primary-first-brand-color);
@@ -215,6 +203,10 @@ main {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  display: block;
+  max-width: 169px;
+  height: 56px;
+  border-radius: 4px;
 }
 
 .main-focus .main-button:hover,
@@ -223,8 +215,12 @@ main {
   background-color: var(--active-link-color);
 }
 /* 2 секція */
-.container .section-two {
-  margin-top: 120px;
+.section-two {
+  padding: 120px 0;
+}
+
+.section-two .list {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .main-center-advantages {
@@ -248,9 +244,13 @@ main {
 }
 
 /* 3 секція */
-.container .main-production {
-  margin-top: 120px;
-  margin-bottom: 120px;
+.main-production {
+  padding: 120px 0;
+}
+
+.main-production .list {
+  flex-basis: calc((100% - 48px) / 3);
+  margin-bottom: 70px;
 }
 
 .main-title {
@@ -263,29 +263,29 @@ main {
   color: var(--primary-second-brand-color);
 }
 
-.main-production .list {
-  margin-top: 72px;
-}
-
 /* 4 секція */
 .main-our-team {
   background-color: var(--primary-body-cloud);
-  text-align: center;
+  padding: 120px 0;
+}
+
+.main-title {
+  margin-bottom: 72px;
 }
 
 .our-team-list {
   background-color: var(--primary-white-color);
-  margin-top: 72px;
-  margin-bottom: 120px;
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.worker {
+  padding: 32px 0;
 }
 
 .main-center-advantages {
-  padding-top: 32px;
+  text-align: center;
   margin-bottom: 8px;
-}
-
-.main-advantage-description {
-  padding-bottom: 32px;
 }
 
 /* footer */
@@ -294,8 +294,14 @@ main {
 }
 .bootom-page .container {
   padding-top: 100px;
-  padding-bottom: 188px;
+  padding-bottom: 100px;
 }
+
+.bootom-page .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .bootom-text {
   font-size: 16px;
   font-weight: 400;
@@ -304,24 +310,20 @@ main {
   color: var(--primary-body-cloud);
 }
 
-.bootom-page .bootom-text {
-  padding-top: 18px;
-}
-
 /* портфоліо */
-flex-wrap: wrap;
-- треба мабуть буде втистунити для 9 картинок- в будшьому 
 
-/* !! */
 .page-list {
   list-style: none;
   text-align: center;
 }
 
-.container .portfolio-list {
-  margin-top: 96px;
-  margin-left: 271px;
-  margin-right: 271px;
+.portfolio-list {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list .list {
+  justify-content: center;
 }
 
 .page-list .link {
@@ -333,6 +335,9 @@ flex-wrap: wrap;
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--secondary-accent-color);
+  border-radius: 4px;
 }
 
 .page-list .link:hover,
@@ -340,11 +345,17 @@ flex-wrap: wrap;
 .page-list .link:active {
   color: var(--primary-white-color);
   background-color: var(--active-link-color);
+  border: 1px solid transparent;
 }
 
-.container .slot li {
-  margin-top: 72px;
+.offers {
+  width: calc((100% - 48px) / 3);
+}
+
+.slot .offers-about {
+  padding: 32px 16px;
   border: 1px solid var(--secondary-accent-color);
+  border-top: none;
 }
 
 .slot .list {
@@ -353,6 +364,6 @@ flex-wrap: wrap;
   gap: 8px;
 }
 
-.slot .main-center-advantages {
-  margin-top: 0;
+.main-center-advantages {
+  margin-bottom: 8px;
 }
