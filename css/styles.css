@@ -128,8 +128,11 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  padding: 24px 0;
   gap: 40px;
+}
+
+.header-list {
+  padding: 24px 0;
 }
 
 .list .link {
@@ -331,6 +334,10 @@ main {
   justify-content: center;
   margin-bottom: 72px;
   border: 10px solid red;
+}
+
+.portfolio-list .list li:last-child {
+  margin-right: 0;
 }
 
 .page-list .link {
