@@ -334,10 +334,11 @@ main {
   justify-content: center;
   margin-bottom: 72px;
   border: 10px solid red;
+  gap: 24px;
 }
 
-.portfolio-list .list li:last-child {
-  margin-right: 0;
+.page-list:last-child {
+  margin-right: 0px;
 }
 
 .page-list .link {
