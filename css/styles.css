@@ -14,10 +14,6 @@
    значення - margin: 0; - в body теж не вказуємо, бо він є у нормалізаторі
 */
 
-section {
-  border: 2px dashed red;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-body-color);
@@ -338,7 +334,6 @@ main {
 .portfolio-list .list {
   justify-content: center;
   margin-bottom: 72px;
-  border: 10px solid red;
   gap: 24px;
 }
 
