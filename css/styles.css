@@ -125,6 +125,13 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+
+.logo-up .list {
+  gap: 40px;
+}
+
+.address-title .list {
   gap: 40px;
 }
 
@@ -153,7 +160,6 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  gap: 40px;
 }
 
 .address-list:last-child {
@@ -320,7 +326,7 @@ main {
 }
 
 .page-list:last-child {
-  margin-right: 100px;
+  margin-right: 0px;
   background-color: green;
 }
 
@@ -331,7 +337,8 @@ main {
 
 .portfolio-list .list {
   justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .page-list .link {
@@ -361,12 +368,6 @@ main {
   padding: 32px 16px;
   border: 1px solid var(--secondary-accent-color);
   border-top: none;
-}
-
-.portfolio-list .list {
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
 }
 
 .portfolio-list .link:last-child {
