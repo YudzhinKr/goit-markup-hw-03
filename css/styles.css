@@ -38,6 +38,7 @@ img {
 
 /* для елементів, що не відображаються, але повинні бути для правильного синтаксису */
 .visually-hidden {
+  background-color: green;
   position: absolute;
   width: 1px;
   height: 1px;
