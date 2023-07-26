@@ -326,8 +326,7 @@ main {
 }
 
 .page-list:last-child {
-  margin-right: 0px;
-  background-color: green;
+  margin-right: 0;
 }
 
 .portfolio-list {
@@ -374,13 +373,10 @@ main {
   margin-right: 0;
 }
 
-.page-list .list li:nth-child(3n) {
+.offers:nth-child(3n) {
   margin-right: 0; /* Обнулення відступу для кожного третього пункту списку */
 }
 /* Для останніх трьох пунктів списку обнулюємо вертикальний відступ */
-.page-list .list li:nth-last-child(-n + 3) {
+.offers:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-.slot {
-  margin-bottom: 120px;
 }
