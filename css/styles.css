@@ -360,8 +360,24 @@ main {
   border-radius: 4px;
 }
 
-.portfolio-list .list .page-list {
+.portfolio-list .filter-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.filter-list {
   margin-bottom: 72px;
+  list-style-type: none;
+}
+
+.filter-list .page-list {
+  margin-right: 24px;
+}
+
+.filter-list .page-list:last-child {
+  margin-right: 0;
 }
 
 .page-list .link:hover,
