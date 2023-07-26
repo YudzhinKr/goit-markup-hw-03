@@ -57,7 +57,13 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 24px;
+}
+.list li {
+  margin-right: 24px;
+}
+
+.list li:last-child {
+  margin-right: 0;
 }
 
 /* для тегов a */
